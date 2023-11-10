@@ -39,7 +39,9 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
         Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
-	
+
+	3 principais entidades: Medico, Paciente e Consulta
+ 
 ![image](https://github.com/RiqMBravim/TemplateBD1/assets/111908300/f11fa359-c4a2-425f-a74c-28934faa789f)
 
 
@@ -59,12 +61,12 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
+        b) verificação de correspondencia com o modelo conceitual
         (não serão aceitos modelos que não estejam em conformidade)
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+        a) inclusão das instruções de criacão das estruturas em SQL/DDL
+        (criação de tabelas, alterações, etc..)
 
       
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
