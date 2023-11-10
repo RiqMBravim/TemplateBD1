@@ -39,9 +39,10 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
         Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
-        
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
-    
+	
+![image](https://github.com/RiqMBravim/TemplateBD1/assets/111908300/f11fa359-c4a2-425f-a74c-28934faa789f)
+
+
     
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
