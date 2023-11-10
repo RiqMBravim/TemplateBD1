@@ -33,7 +33,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 ### 5.MODELO CONCEITUAL<br>
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
     B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 3 e o Máximo 5.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
+        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)
     C) Principais fluxos de informação/entidades do sistema (mínimo 3). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
     D) Qualidade e Clareza
         Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
@@ -46,15 +46,39 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    Pessoa: Tabela que armazena as informações relativas aos Pacientes e Medicos<br>
+    	Id: campo que armazena o número de identificação da tabela, chave primária
+    	CPF: campo que armazena o número de Cadastro de Pessoa Física para cada pessoa.<br>
+     	Nome: campo que armazena o nome de cada pessoa.
+      	RG: campo que armazena o numero de Registro Geral de cada pessoa.
+       	CEP: campo que armazena o Código de Endereçamento Postal de cada pessoa.
+	Datanascimento: campo que armazena a data de nascimento de cada pessoa.
+ 	email: campo que armazena o email de cada pessoa.
+  	telefone: campo que armazena o número de telefone de cada pessoa.
+   	endereco: campo que armazena o endereço de cada pessoa (estado, cidade, bairro, rua e logradouro)
+    Medico: Tabela que armazena as informações relativas aos Medicos.
+    	Id: Número de identificação da tabela, chave primária.
+     	crm_medico: campo que armazena o numero de registro do Conselho Regional de Medicina do medico.
+      	especialidade_medico: campo que armazena a especialidade do medico (se é pediatra, dermatologista, dentista etc...)
+    Paciente: Tabela que armazena as informações relativas aos Pacientes.
+    	Id: campo que armazena o número de identificação da tabela, chave primaria.
+     	diagnostico_paciente: campo que armazena o diagnostico do paciente apos ter sido examinado na consulta.
+    Agendamento: Tabela que armazena as informações referentes ao agendamento das consultas.
+    	Id: campo que armazena o número de identificação da tabela, chave primária
+     	datahoraconsulta_agendamento: campo que armazena a data e a hora em que a consulta será realizada.
+      	fk_nome_paciente: chave estrangeira da tabela Pessoa, serve para receber o nome do paciente que será consultado.
+       	fk_nome_medico: chave estrangeira da tabela Medico, serve para receber o nome do medico que fara a consulta.
+    Consulta: Tabela que armazena as informações referentes as consultas.
+    	Id: campo que armazena o número de identificação da tabela, chave primária
+     	datahorainicio_consulta: campo que armazena a data e a hora de inicio da consulta.
+      	datahorafim_consulta: campo que armazena a data e a hora do fim da consulta.
+       	fk_nome_medico: chave estrangeira da tabela Medico, serve para receber o nome do medico que fez a consulta.
+	fk_nome_pessoa: chave estrangeira da tabela Pessoa, serve para receber o nome da pessoa que foi consultada.
+ 	diagnostico_consulta = campo que armazena o diagnostico emitido pelo Medico do paciente.
+    
 
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
 
