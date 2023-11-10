@@ -28,7 +28,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
  	Relatório com a hora de trabalho média de cada especialidade
   	Relatório da idade média de cada diagnostico
    	Relatório de taxa de cancelamento de consulta
-    		Relatório de atraso de inicio e fim de consulta de cada médico
+    	Relatório de atraso de inicio e fim de consulta de cada médico
     
 ### 5.MODELO CONCEITUAL<br>
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
@@ -76,8 +76,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
      	datahorainicio_consulta: campo que armazena a data e a hora de inicio da consulta.
       	datahorafim_consulta: campo que armazena a data e a hora do fim da consulta.
        	fk_nome_medico: chave estrangeira da tabela Medico, serve para receber o nome do medico que fez a consulta.
-	fk_nome_pessoa: chave estrangeira da tabela Pessoa, serve para receber o nome da pessoa que foi consultada.
- 	diagnostico_consulta = campo que armazena o diagnostico emitido pelo Medico do paciente.
+		fk_nome_pessoa: chave estrangeira da tabela Pessoa, serve para receber o nome da pessoa que foi consultada.
+ 		diagnostico_consulta = campo que armazena o diagnostico emitido pelo Medico do paciente.
     
 
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
