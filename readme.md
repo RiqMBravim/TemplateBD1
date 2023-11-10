@@ -4,35 +4,31 @@ Trabalho desenvolvido durante a disciplina de BD1
 # Sumário
 
 ### 1. COMPONENTES<br>
-Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
-...<br>
 
+Integrantes do grupo<br>
+HenriqueMBravim@gmail.com
+Cassiano.caporalis@gmail.com
+gustavobilabbong@gmail.com
 
 ### 2.MINI-MUNDO<br>
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
+A empresa Coda Fofo está criando um sistema para agendamento de consultas em Unidades Básicas de Saúde para alcançar uma maior produtividade dos funcionários e melhor atendimento aos pacientes. Para isso é necessário armazenar informações dos pacientes, sendo elas ( RG, CPF, Endereço, Nome, data de nascimento) e dos funcionários ( Nome, CPF, RG, Função, Endereço, Data de nascimento). O paciente pode realizar vários agendamentos com vários médicos, o agendamento deve armazenar as seguintes informações ( Data e Hora do Agendamento, nome do paciente, nome do médico), quando o agendamento é efetivado, cria-se uma consulta a consulta está relacionado a um paciente e um médico, na consulta deve se conter as seguintes informações ( Data e Hora da consulta, Nome do médico, Nome do paciente, Diagnóstico, Duração da consulta).
 
 ### 3.PERGUNTAS A SEREM RESPONDIDAS<br>
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
+    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes?
     
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo.  <br>  c) Observe que para entregar os relatórios propostos, todos os atributos necessários nos relatórios deverão existir ou derivar de atributos existentes.
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa. 
+	Informação de registro dos Médicos como: nome, CRM, especialidade, email, telefone.
+ 	Além de informações sobre o paciente, nome, telefone, email, idade, endereço, diagnostico.
+  	por meio disso conseguimos informações sobre a consulta, por exemplo: dados do médico e do paciente envolvidos, e informações essenciais da consulta(data da consulta, hora de inicio e do fim, 		observações e status da consulta)
 
+    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
+
+	Relatório com a hora trabalhada de cada médico
+ 	Relatório com a hora de trabalho média de cada especialidade
+  	Relatório da idade média de cada diagnostico
+   	Relatório de taxa de cancelamento de consulta
+    	Relatório de atraso de inicio e fim de consulta de cada médico
     
 ### 5.MODELO CONCEITUAL<br>
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
