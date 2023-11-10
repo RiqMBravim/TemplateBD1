@@ -12,15 +12,15 @@ gustavobilabbong@gmail.com
 
 ### 2.MINI-MUNDO<br>
 
-A empresa Coda Fofo está criando um sistema para agendamento de consultas em Unidades Básicas de Saúde para alcançar uma maior produtividade dos funcionários e melhor atendimento aos pacientes. Para isso é necessário armazenar informações dos pacientes, sendo elas (Nome, RG, CPF, Endereço, Data de Nascimento ) e dos Médicos ( Nome, RG, CPF, Endereço, Data de Nascimento, Especialidade e CRM). O paciente pode realizar vários agendamentos com vários médicos, o agendamento deve armazenar as seguintes informações ( Data e Hora da Consulta, nome do paciente, nome do médico ), quando o agendamento é efetivado cria-se uma consulta, a consulta está relacionado a um paciente e um médico, na consulta deve se conter as seguintes informações ( Data e Hora da consulta, Nome do médico, Nome do paciente, Diagnóstico, Duração da consulta).
+A empresa Coda Fofo está criando um sistema para agendamento de consultas em Unidades Básicas de Saúde para alcançar uma maior produtividade dos funcionários e melhor atendimento aos pacientes. Para isso é necessário armazenar informações dos pacientes, sendo elas: Nome, RG, CPF, CEP, Data de Nascimento, Email, Telefone e dos Médicos Nome, RG, CPF, CEP, Data de Nascimento, Email, Telefone, Especialidade e CRM. Ambos médico e paciente devem possuir ao menos um Endereço contendo: estado, cidade, bairro, rua e logradouro. O paciente pode realizar vários agendamentos com vários médicos, porém apenas um agendamento por médico, o agendamento deve armazenar as seguintes informações ( Data e Hora da Consulta, nome do paciente, nome do médico ), quando o agendamento é efetivado cria-se uma consulta, a consulta está relacionado a um paciente e um médico, na consulta deve se conter as seguintes informações: Data e Hora da consulta, Nome do médico, Nome do paciente, Diagnóstico, Duração da consulta.
 
 ### 3.PERGUNTAS A SEREM RESPONDIDAS<br>
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes?
     
-	Informação de registro dos Médicos como: nome, CRM, especialidade, email, telefone.
- 	Além de informações sobre o paciente, nome, telefone, email, idade, endereço, diagnostico.
-  	por meio disso conseguimos informações sobre a consulta, por exemplo: dados do médico e do paciente envolvidos, e informações essenciais da consulta(data da consulta, hora de inicio e do fim, 		observações e status da consulta)
+	Informação de registro dos Médicos, como: Nome, CRM, Especialidade, Email, Telefone.
+ 	Informações de registro dos Pacientes, como: Nome, Telefone, Email, Idade, Endereço, Diagnostico.
+  	Informações sobre a Consulta, como: dados do médico e do paciente envolvidos, data da consulta, hora de inicio e do fim e observações
 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
 
