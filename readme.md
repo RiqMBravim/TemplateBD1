@@ -28,7 +28,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
  	Relatório com a hora de trabalho média de cada especialidade
   	Relatório da idade média de cada diagnostico
    	Relatório de taxa de cancelamento de consulta
-    	Relatório de atraso de inicio e fim de consulta de cada médico
+    		Relatório de atraso de inicio e fim de consulta de cada médico
     
 ### 5.MODELO CONCEITUAL<br>
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
@@ -55,10 +55,10 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
      	Nome: campo que armazena o nome de cada pessoa.
       	RG: campo que armazena o numero de Registro Geral de cada pessoa.
        	CEP: campo que armazena o Código de Endereçamento Postal de cada pessoa.
-	Datanascimento: campo que armazena a data de nascimento de cada pessoa.
- 	email: campo que armazena o email de cada pessoa.
-  	telefone: campo que armazena o número de telefone de cada pessoa.
-   	endereco: campo que armazena o endereço de cada pessoa (estado, cidade, bairro, rua e logradouro)
+		Datanascimento: campo que armazena a data de nascimento de cada pessoa.
+ 		email: campo que armazena o email de cada pessoa.
+  		telefone: campo que armazena o número de telefone de cada pessoa.
+   		endereco: campo que armazena o endereço de cada pessoa (estado, cidade, bairro, rua e logradouro)
     Medico: Tabela que armazena as informações relativas aos Medicos.
     	Id: Número de identificação da tabela, chave primária.
      	crm_medico: campo que armazena o numero de registro do Conselho Regional de Medicina do medico.
