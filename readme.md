@@ -42,8 +42,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 
 	3 principais entidades: Medico, Paciente e Consulta
  
-![image](https://github.com/RiqMBravim/TemplateBD1/assets/111908300/f11fa359-c4a2-425f-a74c-28934faa789f)
-
+![image](https://github.com/RiqMBravim/TemplateBD1/assets/111908300/4dc2c55a-7cb6-45e3-89cb-f6929e55ef07)
 
     
 #### 5.1 Validação do Modelo Conceitual
