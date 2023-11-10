@@ -87,6 +87,9 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
         b) verificação de correspondencia com o modelo conceitual
         (não serão aceitos modelos que não estejam em conformidade)
 
+ ![image](https://github.com/RiqMBravim/TemplateBD1/assets/111908300/073c5eac-84b5-49d6-9d83-b45e871a50f2)
+
+
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL
         (criação de tabelas, alterações, etc..)
