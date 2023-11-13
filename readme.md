@@ -53,7 +53,6 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
     	CPF: campo que armazena o número de Cadastro de Pessoa Física para cada pessoa.<br>
      	Nome: campo que armazena o nome de cada pessoa.
       	RG: campo que armazena o numero de Registro Geral de cada pessoa.
-       	CEP: campo que armazena o Código de Endereçamento Postal de cada pessoa.
 		Datanascimento: campo que armazena a data de nascimento de cada pessoa.
  		email: campo que armazena o email de cada pessoa.
   		telefone: campo que armazena o número de telefone de cada pessoa.
@@ -68,15 +67,14 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
     Agendamento: Tabela que armazena as informações referentes ao agendamento das consultas.
     	Id: campo que armazena o número de identificação da tabela, chave primária
      	datahoraconsulta_agendamento: campo que armazena a data e a hora em que a consulta será realizada.
-      	fk_nome_paciente: chave estrangeira da tabela Pessoa, serve para receber o nome do paciente que será consultado.
-       	fk_nome_medico: chave estrangeira da tabela Medico, serve para receber o nome do medico que fara a consulta.
+      	id_paciente: chave estrangeira da tabela Pessoa, serve para receber o nome do paciente que será consultado.
+       	id_medico: chave estrangeira da tabela Medico, serve para receber o nome do medico que fara a consulta.
     Consulta: Tabela que armazena as informações referentes as consultas.
     	Id: campo que armazena o número de identificação da tabela, chave primária
      	datahorainicio_consulta: campo que armazena a data e a hora de inicio da consulta.
       	datahorafim_consulta: campo que armazena a data e a hora do fim da consulta.
-       	fk_nome_medico: chave estrangeira da tabela Medico, serve para receber o nome do medico que fez a consulta.
-		fk_nome_pessoa: chave estrangeira da tabela Pessoa, serve para receber o nome da pessoa que foi consultada.
- 		diagnostico_consulta = campo que armazena o diagnostico emitido pelo Medico do paciente.
+       	id_agendamento: chave estrangeira da tabela Agendamento, serve para receber o id do agendamento da respectiva consulta.
+ 		status_consulta = campo que armazena o status da consulta (Concluida ou Faltosa).
     
 
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
