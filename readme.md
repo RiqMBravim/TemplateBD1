@@ -56,34 +56,34 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
      	nome: campo que armazena o nome de cada pessoa.
 	rg: campo que armazena o numero de Registro Geral de cada pessoa.
 	datanascimento: campo que armazena a data de nascimento de cada pessoa.
-   CONTATO: Tabela que armazena os métodos de contato:
-	id: campo que armazena o número de indentificação da tabela, chave primária
- 	email: campo que armazena o email de cada pessoa.
-  	telefone: campo que armazena o número de telefone de cada pessoa.
-   ENDERECO: Tabela que armazena o endereço de cada pessoa:
-	id: campo que armazena o número de identificação da tabela, chave primária.
-	estado: campo que armazena o estado em que o usuário reside.
-	cidada: campo que armazena a cidade em que o usuário reside.
-	bairro: campo que armazena o bairro em que o usuário reside.
-	rua: campo que armazena a rua em que o usuário reside.
-    MEDICO: Tabela que armazena as informações relativas aos Medicos:
-    	id: Número de identificação da tabela, chave primária.
-     	crm_medico: campo que armazena o numero de registro do Conselho Regional de Medicina do medico.
-      	especialidade_medico: campo que armazena a especialidade do medico (se é pediatra, dermatologista, dentista etc...)
-    PACIENTE: Tabela que armazena as informações relativas aos Pacientes:
-    	id: campo que armazena o número de identificação da tabela, chave primaria.
-     	diagnostico_paciente: campo que armazena o diagnostico do paciente apos ter sido examinado na consulta.
-    AGENDAMENTO: Tabela que armazena as informações referentes ao agendamento das consultas:
-    	id: campo que armazena o número de identificação da tabela, chave primária
-     	datahoraconsulta_agendamento: campo que armazena a data e a hora em que a consulta será realizada.
-      	id_paciente: chave estrangeira da tabela Pessoa, serve para receber o nome do paciente que será consultado.
-       	id_medico: chave estrangeira da tabela Medico, serve para receber o nome do medico que fara a consulta.
-    CONSULTA: Tabela que armazena as informações referentes as consultas:
-    	id: campo que armazena o número de identificação da tabela, chave primária
-     	datahorainicio_consulta: campo que armazena a data e a hora de inicio da consulta.
-      	datahorafim_consulta: campo que armazena a data e a hora do fim da consulta.
-       	id_agendamento: chave estrangeira da tabela Agendamento, serve para receber o id do agendamento da respectiva consulta.
- 	status_consulta = campo que armazena o status da consulta (Concluida ou Faltosa).
+	   CONTATO: Tabela que armazena os métodos de contato:
+		id: campo que armazena o número de indentificação da tabela, chave primária
+	 	email: campo que armazena o email de cada pessoa.
+	  	telefone: campo que armazena o número de telefone de cada pessoa.
+	   ENDERECO: Tabela que armazena o endereço de cada pessoa:
+		id: campo que armazena o número de identificação da tabela, chave primária.
+		estado: campo que armazena o estado em que o usuário reside.
+		cidada: campo que armazena a cidade em que o usuário reside.
+		bairro: campo que armazena o bairro em que o usuário reside.
+		rua: campo que armazena a rua em que o usuário reside.
+	    MEDICO: Tabela que armazena as informações relativas aos Medicos:
+	    	id: Número de identificação da tabela, chave primária.
+	     	crm_medico: campo que armazena o numero de registro do Conselho Regional de Medicina do medico.
+	      	especialidade_medico: campo que armazena a especialidade do medico (se é pediatra, dermatologista, dentista etc...)
+	    PACIENTE: Tabela que armazena as informações relativas aos Pacientes:
+	    	id: campo que armazena o número de identificação da tabela, chave primaria.
+	     	diagnostico_paciente: campo que armazena o diagnostico do paciente apos ter sido examinado na consulta.
+	    AGENDAMENTO: Tabela que armazena as informações referentes ao agendamento das consultas:
+	    	id: campo que armazena o número de identificação da tabela, chave primária
+	     	datahoraconsulta_agendamento: campo que armazena a data e a hora em que a consulta será realizada.
+	      	id_paciente: chave estrangeira da tabela Pessoa, serve para receber o nome do paciente que será consultado.
+	       	id_medico: chave estrangeira da tabela Medico, serve para receber o nome do medico que fara a consulta.
+	    CONSULTA: Tabela que armazena as informações referentes as consultas:
+	    	id: campo que armazena o número de identificação da tabela, chave primária
+	     	datahorainicio_consulta: campo que armazena a data e a hora de inicio da consulta.
+	      	datahorafim_consulta: campo que armazena a data e a hora do fim da consulta.
+	       	id_agendamento: chave estrangeira da tabela Agendamento, serve para receber o id do agendamento da respectiva consulta.
+	 	status_consulta = campo que armazena o status da consulta (Concluida ou Faltosa).
     
 
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
