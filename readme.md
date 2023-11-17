@@ -50,12 +50,12 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 #### 5.2 Descrição dos dados 
     
     
-    PESSOA: Tabela que armazena as informações relativas aos Usuários:
-    	id: campo que armazena o número de identificação da tabela, chave primária.
-    	cpf: campo que armazena o número de Cadastro de Pessoa Física para cada pessoa.
-     	nome: campo que armazena o nome de cada pessoa.
-	rg: campo que armazena o numero de Registro Geral de cada pessoa.
-	datanascimento: campo que armazena a data de nascimento de cada pessoa.
+	    PESSOA: Tabela que armazena as informações relativas aos Usuários:
+	    	id: campo que armazena o número de identificação da tabela, chave primária.
+	    	cpf: campo que armazena o número de Cadastro de Pessoa Física para cada pessoa.
+	     	nome: campo que armazena o nome de cada pessoa.
+		rg: campo que armazena o numero de Registro Geral de cada pessoa.
+		datanascimento: campo que armazena a data de nascimento de cada pessoa.
 	   CONTATO: Tabela que armazena os métodos de contato:
 		id: campo que armazena o número de indentificação da tabela, chave primária
 	 	email: campo que armazena o email de cada pessoa.
