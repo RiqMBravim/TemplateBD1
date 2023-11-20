@@ -99,13 +99,13 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL
 	
-CREATE TABLE IF NOT EXISTS PESSOA (
-  id SERIAL PRIMARY KEY NOT NULL,
-  rg_pessoa VARCHAR(255) UNIQUE NOT NULL,
-  cpf_pessoa VARCHAR(255) UNIQUE NOT NULL,
-  nome_pessoa VARCHAR(255) NOT NULL,
-  datanasc_pessoa DATE NOT NULL
-);
+	CREATE TABLE IF NOT EXISTS PESSOA (
+	  id SERIAL PRIMARY KEY NOT NULL,
+	  rg_pessoa VARCHAR(255) UNIQUE NOT NULL,
+	  cpf_pessoa VARCHAR(255) UNIQUE NOT NULL,
+	  nome_pessoa VARCHAR(255) NOT NULL,
+	  datanasc_pessoa DATE NOT NULL
+	);
 CREATE TABLE IF NOT EXISTS CONTATO (
   id SERIAL PRIMARY KEY NOT NULL,
   email_contato VARCHAR(255),
