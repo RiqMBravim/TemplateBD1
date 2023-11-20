@@ -441,6 +441,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id)
 	);
 	
+
 	INSERT INTO AGENDAMENTO (fk_id_pessoa, fk_id_medico, datahoraagendamento_agendamento) VALUES
 	(1, 1, '2023-11-17 09:00:00'),
 	(2, 2, '2023-11-17 10:30:00'),
@@ -462,23 +463,23 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	(18, 18, '2023-11-20 12:30:00'),
 	(19, 19, '2023-11-20 14:00:00'),
 	(20, 20, '2023-11-20 15:30:00'),
-	(21, 21, '2023-11-21 09:00:00'),
-	(22, 22, '2023-11-21 10:30:00'),
-	(23, 23, '2023-11-21 12:00:00'),
-	(24, 24, '2023-11-21 14:30:00'),
-	(25, 25, '2023-11-21 16:00:00'),
-	(26, 26, '2023-11-22 09:30:00'),
-	(27, 27, '2023-11-22 11:00:00'),
-	(28, 28, '2023-11-22 13:30:00'),
-	(29, 29, '2023-11-22 15:00:00'),
-	(30, 30, '2023-11-22 16:30:00');
+	(21, 1, '2023-11-21 09:00:00'),
+	(22, 2, '2023-11-21 10:30:00'),
+	(23, 3, '2023-11-21 12:00:00'),
+	(24, 4, '2023-11-21 14:30:00'),
+	(25, 5, '2023-11-21 16:00:00'),
+	(26, 6, '2023-11-22 09:30:00'),
+	(27, 7, '2023-11-22 11:00:00'),
+	(28, 8, '2023-11-22 13:30:00'),
+	(29, 9, '2023-11-22 15:00:00'),
+	(30, 10, '2023-11-22 16:30:00');
 	
 	
 	CREATE TABLE IF NOT EXISTS CONSULTA (
 	  id SERIAL PRIMARY KEY NOT NULL,
 	  fk_id_agendamento INTEGER NOT NULL,
-	  datahorainicio_consulta DATETIME,
-	  datahorafim_consulta DATETIME,
+	  datahorainicio_consulta TIMESTAMP,
+	  datahorafim_consulta TIMESTAMP,
 	  status_consulta VARCHAR(255),
 	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id)
 	);
