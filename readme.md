@@ -99,38 +99,38 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL
 	
-        CREATE TABLE IF NOT EXISTS PESSOA (
-	id SERIAL PRIMARY KEY NOT NULL,
-	rg_pessoa VARCHAR(255) UNIQUE NOT NULL,
-	cpf_pessoa VARCHAR(255) UNIQUE NOT NULL,
-	nome_pessoa VARCHAR(255) NOT NULL,
-	datanasc_pessoa DATE NOT NULL
+CREATE TABLE IF NOT EXISTS PESSOA (
+  id SERIAL PRIMARY KEY NOT NULL,
+  rg_pessoa VARCHAR(255) UNIQUE NOT NULL,
+  cpf_pessoa VARCHAR(255) UNIQUE NOT NULL,
+  nome_pessoa VARCHAR(255) NOT NULL,
+  datanasc_pessoa DATE NOT NULL
 );
-	CREATE TABLE IF NOT EXISTS CONTATO (
-	id SERIAL PRIMARY KEY NOT NULL,
-	email_contato VARCHAR(255),
-	telefone_contato VARCHAR(255),
-	fk_id_pessoa INTEGER NOT NULL,
-	CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
-);
-
-	CREATE TABLE IF NOT EXISTS ENDERECO (
-	id SERIAL PRIMARY KEY NOT NULL,
-	estado_endereco VARCHAR(255) NOT NULL,
-	cidade_endereco varchar(255) NOT NULL,
-	bairro_endereco VARCHAR(255) NOT NULL,
-	rua_endereco VARCHAR(255) NOT NULL,
-	logradouro_endereco VARCHAR(255) NOT NULL,
-	fk_id_pessoa INTEGER NOT NULL,
-	CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+CREATE TABLE IF NOT EXISTS CONTATO (
+  id SERIAL PRIMARY KEY NOT NULL,
+  email_contato VARCHAR(255),
+  telefone_contato VARCHAR(255),
+  fk_id_pessoa INTEGER NOT NULL,
+  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
 );
 
-	CREATE TABLE IF NOT EXISTS MEDICO (
-	id SERIAL PRIMARY KEY NOT NULL,
-	crm_medico VARCHAR(255) UNIQUE NOT NULL,
-	fk_id_pessoa INTEGER NOT NULL,
-	especialidade_medico VARCHAR(255) NOT NULL,
-	CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+CREATE TABLE IF NOT EXISTS ENDERECO (
+  id SERIAL PRIMARY KEY NOT NULL,
+  estado_endereco VARCHAR(255) NOT NULL,
+  cidade_endereco varchar(255) NOT NULL,
+  bairro_endereco VARCHAR(255) NOT NULL,
+  rua_endereco VARCHAR(255) NOT NULL,
+  logradouro_endereco VARCHAR(255) NOT NULL,
+  fk_id_pessoa INTEGER NOT NULL,
+  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+);
+
+CREATE TABLE IF NOT EXISTS MEDICO (
+  id SERIAL PRIMARY KEY NOT NULL,
+  crm_medico VARCHAR(255) UNIQUE NOT NULL,
+  fk_id_pessoa INTEGER NOT NULL,
+  especialidade_medico VARCHAR(255) NOT NULL,
+  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
 );
 
 CREATE TABLE IF NOT EXISTS PACIENTE (
@@ -174,11 +174,11 @@ drop table if exists MEDICO;
 drop table if exists PESSOA;
 
 CREATE TABLE IF NOT EXISTS PESSOA (
-	id SERIAL PRIMARY KEY NOT NULL,
-	rg_pessoa VARCHAR(255) UNIQUE NOT NULL,
-	cpf_pessoa VARCHAR(255) UNIQUE NOT NULL,
-	nome_pessoa VARCHAR(255) NOT NULL,
-	datanasc_pessoa DATE NOT NULL
+  id SERIAL PRIMARY KEY NOT NULL,
+  rg_pessoa VARCHAR(255) UNIQUE NOT NULL,
+  cpf_pessoa VARCHAR(255) UNIQUE NOT NULL,
+  nome_pessoa VARCHAR(255) NOT NULL,
+  datanasc_pessoa DATE NOT NULL
 );
 
 INSERT INTO PESSOA (rg_pessoa, cpf_pessoa, nome_pessoa, datanasc_pessoa) VALUES
@@ -358,7 +358,6 @@ INSERT INTO ENDERECO (estado_endereco, cidade_endereco, bairro_endereco, rua_end
 ('TO', 'Palmas', 'Plano Diretor Sul', 'Avenida VV', 'Casa 148', 48),
 ('RN', 'Natal', 'Ponta Negra', 'Rua WW', 'Apartamento 149', 49),
 ('MA', 'São Luís', 'Calhau', 'Avenida XX', 'Casa 150', 50);
-
 
 
 CREATE TABLE IF NOT EXISTS MEDICO (
