@@ -236,8 +236,6 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	('9988794', '99887766563', 'Amanda Souza', 'F', '1996-04-11'),
 	('1122354', '11223344566', 'Henrique Oliveira', 'M', '1983-07-21'),
 	('4455687', '44556677899', 'Juliana Pereira', 'F', '1990-09-05');
-
-	
 	
 	CREATE TABLE IF NOT EXISTS CONTATO (
 	  id SERIAL PRIMARY KEY NOT NULL,
