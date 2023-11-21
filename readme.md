@@ -104,6 +104,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  rg_pessoa VARCHAR(255) UNIQUE NOT NULL,
 	  cpf_pessoa VARCHAR(255) UNIQUE NOT NULL,
 	  nome_pessoa VARCHAR(255) NOT NULL,
+   	  sexo_pessoa VARCHAR(255) NOT NULL,
 	  datanasc_pessoa DATE NOT NULL
 	);
  
