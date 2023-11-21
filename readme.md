@@ -138,6 +138,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	CREATE TABLE IF NOT EXISTS PACIENTE (
 	  id SERIAL PRIMARY KEY NOT NULL,
 	  diagnostico_paciente VARCHAR(255) NOT NULL,
+   	  altura_paciente VARCHAR(255) NOT NULL,
+      	  peso_paciente VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
 	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
 	);
@@ -397,42 +399,45 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	CREATE TABLE IF NOT EXISTS PACIENTE (
 	  id SERIAL PRIMARY KEY NOT NULL,
 	  diagnostico_paciente VARCHAR(255) NOT NULL,
+   	  altura_paciente VARCHAR(255) NOT NULL,
+      	  peso_paciente VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
 	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
 	);
 	
-	INSERT INTO PACIENTE (diagnostico_paciente, fk_id_pessoa) VALUES
-	('Febre alta', 21),
-	('Dermatite', 22),
-	('Pressão alta', 23),
-	('Fratura no braço', 24),
-	('Gravidez confirmada', 25),
-	('Enxaqueca crônica', 26),
-	('Problema de visão', 27),
-	('Alergia alimentar', 28),
-	('Diabetes tipo 2', 29),
-	('Depressão', 30),
-	('Infecção urinária', 31),
-	('Problema gastrointestinal', 32),
-	('Câncer de mama', 33),
-	('Fratura na perna', 34),
-	('Tratamento odontológico', 35),
-	('Lesão no joelho', 36),
-	('Controle de peso', 37),
-	('Aconselhamento psicológico', 38),
-	('Problema respiratório', 39),
-	('Problema auditivo', 40),
-	('Lesão no ombro', 41),
-	('Reabilitação física', 42),
-	('Distúrbio alimentar', 43),
-	('Problema cardíaco', 44),
-	('Acompanhamento nutricional', 45),
-	('Alergia respiratória', 46),
-	('Dor crônica nas costas', 47),
-	('Problema renal', 48),
-	('Tratamento psiquiátrico', 49),
-	('Alergia cutânea', 50);
-	
+ 	INSERT INTO PACIENTE (diagnostico_paciente, altura_paciente, peso_paciente, fk_id_pessoa) VALUES
+	('Febre alta', '170 cm', '80 kg', 21),
+	('Dermatite', '160 cm', '55 kg', 22),
+	('Pressão alta', '175 cm', '80 kg', 23),
+	('Fratura no braço', '165 cm', '65 kg', 24),
+	('Gravidez confirmada', '160 cm', '50 kg', 25),
+	('Enxaqueca crônica', '180 cm', '80 kg', 26),
+	('Problema de visão', '165 cm', '70 kg', 27),
+	('Alergia alimentar', '170 cm', '50 kg', 28),
+	('Diabetes tipo 2', '160 cm', '80 kg', 29),
+	('Depressão', '175 cm', '80 kg', 30),
+	('Infecção urinária', '160 cm', '50 kg', 31),
+	('Problema gastrointestinal', '180 cm', '80 kg', 32),
+	('Câncer de mama', '165 cm', '80 kg', 33),
+	('Fratura na perna', '170 cm', '65 kg', 34),
+	('Tratamento odontológico', '160 cm', '55 kg', 35),
+	('Lesão no joelho', '175 cm', '80 kg', 36),
+	('Controle de peso', '160 cm', '50 kg', 37),
+	('Aconselhamento psicológico', '180 cm', '80 kg', 38),
+	('Problema respiratório', '165 cm', '70 kg', 39),
+	('Problema auditivo', '170 cm', '50 kg', 40),
+	('Lesão no ombro', '160 cm', '55 kg', 41),
+	('Reabilitação física', '175 cm', '80 kg', 42),
+	('Distúrbio alimentar', '160 cm', '50 kg', 43),
+	('Problema cardíaco', '180 cm', '80 kg', 44),
+	('Acompanhamento nutricional', '165 cm', '80 kg', 45),
+	('Alergia respiratória', '170 cm', '50 kg', 46),
+	('Dor crônica nas costas', '160 cm', '55 kg', 47),
+	('Problema renal', '175 cm', '80 kg', 48),
+	('Tratamento psiquiátrico', '160 cm', '50 kg', 49),
+	('Alergia cutânea', '180 cm', '80 kg', 50);
+
+
 	CREATE TABLE IF NOT EXISTS AGENDAMENTO (
 	  id SERIAL PRIMARY KEY NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
