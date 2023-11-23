@@ -42,7 +42,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 
 	3 principais entidades: Medico, Paciente e Consulta
  
-![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/dbaf16a3-d3ee-4ecc-a9cd-62a633823992)
+![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/8b564a51-0b02-4535-9435-769b62664e96)
 
 
 #### 5.1 Validação do Modelo Conceitual
@@ -56,6 +56,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	     	nome: campo que armazena o nome de cada pessoa.
 		rg: campo que armazena o numero de Registro Geral de cada pessoa.
 		datanascimento: campo que armazena a data de nascimento de cada pessoa.
+  		genero: campo que armazena o genero de cada pessoa.
 	   CONTATO: Tabela que armazena os métodos de contato:
 		id: campo que armazena o número de indentificação da tabela, chave primária
 	 	email: campo que armazena o email de cada pessoa.
@@ -73,7 +74,9 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	    PACIENTE: Tabela que armazena as informações relativas aos Pacientes:
 	    	id: campo que armazena o número de identificação da tabela, chave primaria.
 	     	diagnostico_paciente: campo que armazena o diagnostico do paciente apos ter sido examinado na consulta.
-	    AGENDAMENTO: Tabela que armazena as informações referentes ao agendamento das consultas:
+       		altura: campo que armazena a altura do paciente.
+	 	peso: campo que armazena o peso do paciente.
+	    AGENDAMENTO: Tabela que armazena as informações referentes ao agendamento das consultas.
 	    	id: campo que armazena o número de identificação da tabela, chave primária
 	     	datahoraconsulta_agendamento: campo que armazena a data e a hora em que a consulta será realizada.
 	      	id_paciente: chave estrangeira da tabela Pessoa, serve para receber o nome do paciente que será consultado.
@@ -93,7 +96,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
         b) verificação de correspondencia com o modelo conceitual
         (não serão aceitos modelos que não estejam em conformidade)
 
-![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/8d5811f1-4530-4516-b07f-65ddea1c4861)
+![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/8a8263ea-364e-44c6-8b54-898cfc7c4522)
 
 
 ### 7	MODELO FÍSICO<br>
