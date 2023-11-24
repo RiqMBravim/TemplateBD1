@@ -42,7 +42,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 
 	3 principais entidades: Medico, Paciente e Consulta
  
-![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/8b564a51-0b02-4535-9435-769b62664e96)
+![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/08bf4836-7763-4a56-9c2d-80a04e0cfc38)
 
 
 #### 5.1 Validação do Modelo Conceitual
@@ -96,7 +96,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
         b) verificação de correspondencia com o modelo conceitual
         (não serão aceitos modelos que não estejam em conformidade)
 
-![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/8a8263ea-364e-44c6-8b54-898cfc7c4522)
+![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/02a69dc3-5a45-4577-9259-6356aabb5315)
 
 
 ### 7	MODELO FÍSICO<br>
