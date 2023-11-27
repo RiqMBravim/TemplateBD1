@@ -116,7 +116,9 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  email_contato VARCHAR(255),
 	  telefone_contato VARCHAR(255),
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade
+
 	);
 	
 	CREATE TABLE IF NOT EXISTS ENDERECO (
@@ -127,7 +129,9 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  rua_endereco VARCHAR(255) NOT NULL,
 	  logradouro_endereco VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade
+
 	);
 	
 	CREATE TABLE IF NOT EXISTS MEDICO (
@@ -135,7 +139,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  crm_medico VARCHAR(255) UNIQUE NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
 	  especialidade_medico VARCHAR(255) NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
 	CREATE TABLE IF NOT EXISTS PACIENTE (
@@ -144,7 +149,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
    	  altura_paciente VARCHAR(255) NOT NULL,
       	  peso_paciente VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
 	CREATE TABLE IF NOT EXISTS AGENDAMENTO (
@@ -152,8 +158,10 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  fk_id_pessoa INTEGER NOT NULL,
 	  fk_id_medico INTEGER NOT NULL,
 	  datahoraagendamento_agendamento TIMESTAMP NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id),
-	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade,
+	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
 	CREATE TABLE IF NOT EXISTS CONSULTA (
@@ -162,7 +170,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  datahorainicio_consulta DATETIME,
 	  datahorafim_consulta DATETIME,
 	  status_consulta VARCHAR(255),
-	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id)
+	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id) MATCH FULL
+on delete cascade on update cascade
 	);
       
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
@@ -247,7 +256,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  email_contato VARCHAR(255),
 	  telefone_contato VARCHAR(255),
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
 	INSERT INTO CONTATO (email_contato, telefone_contato, fk_id_pessoa) VALUES
@@ -311,7 +321,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  rua_endereco VARCHAR(255) NOT NULL,
 	  logradouro_endereco VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
 	INSERT INTO ENDERECO (estado_endereco, cidade_endereco, bairro_endereco, rua_endereco, logradouro_endereco, fk_id_pessoa) VALUES
@@ -372,7 +383,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  crm_medico VARCHAR(255) UNIQUE NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
 	  especialidade_medico VARCHAR(255) NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
 	INSERT INTO MEDICO (crm_medico, fk_id_pessoa, especialidade_medico) VALUES
@@ -405,7 +417,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
    	  altura_paciente VARCHAR(255) NOT NULL,
       	  peso_paciente VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
  	INSERT INTO PACIENTE (diagnostico_paciente, altura_paciente, peso_paciente, fk_id_pessoa) VALUES
@@ -446,8 +459,10 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  fk_id_pessoa INTEGER NOT NULL,
 	  fk_id_medico INTEGER NOT NULL,
 	  datahoraagendamento_agendamento TIMESTAMP NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id),
-	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id)
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
+on delete cascade on update cascade,
+	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
 
@@ -490,7 +505,8 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  datahorainicio_consulta TIMESTAMP,
 	  datahorafim_consulta TIMESTAMP,
 	  status_consulta VARCHAR(255),
-	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id)
+	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id) MATCH FULL
+on delete cascade on update cascade
 	);
 	
 	INSERT INTO CONSULTA (fk_id_agendamento, datahorainicio_consulta, datahorafim_consulta, status_consulta) VALUES
