@@ -116,8 +116,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
 	  email_contato VARCHAR(255),
 	  telefone_contato VARCHAR(255),
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade
 
 	);
 	
@@ -129,8 +128,7 @@ on delete cascade on update cascade
 	  rua_endereco VARCHAR(255) NOT NULL,
 	  logradouro_endereco VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade
 
 	);
 	
@@ -139,8 +137,7 @@ on delete cascade on update cascade
 	  crm_medico VARCHAR(255) UNIQUE NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
 	  especialidade_medico VARCHAR(255) NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade
 	);
 	
 	CREATE TABLE IF NOT EXISTS PACIENTE (
@@ -149,8 +146,7 @@ on delete cascade on update cascade
    	  altura_paciente VARCHAR(255) NOT NULL,
       	  peso_paciente VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade
 	);
 	
 	CREATE TABLE IF NOT EXISTS AGENDAMENTO (
@@ -158,10 +154,8 @@ on delete cascade on update cascade
 	  fk_id_pessoa INTEGER NOT NULL,
 	  fk_id_medico INTEGER NOT NULL,
 	  datahoraagendamento_agendamento TIMESTAMP NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade,
-	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade,
+	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id) MATCH FULL on delete cascade on update cascade
 	);
 	
 	CREATE TABLE IF NOT EXISTS CONSULTA (
@@ -170,8 +164,7 @@ on delete cascade on update cascade
 	  datahorainicio_consulta DATETIME,
 	  datahorafim_consulta DATETIME,
 	  status_consulta VARCHAR(255),
-	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id) MATCH FULL on delete cascade on update cascade
 	);
       
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
@@ -455,8 +448,7 @@ on delete cascade on update cascade
 	  fk_id_pessoa INTEGER NOT NULL,
 	  fk_id_medico INTEGER NOT NULL,
 	  datahoraagendamento_agendamento TIMESTAMP NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade,
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade,
 	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id) MATCH FULL on delete cascade on update cascade
 	);
 	
