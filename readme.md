@@ -256,8 +256,7 @@ on delete cascade on update cascade
 	  email_contato VARCHAR(255),
 	  telefone_contato VARCHAR(255),
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade
 	);
 	
 	INSERT INTO CONTATO (email_contato, telefone_contato, fk_id_pessoa) VALUES
@@ -321,8 +320,7 @@ on delete cascade on update cascade
 	  rua_endereco VARCHAR(255) NOT NULL,
 	  logradouro_endereco VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade
 	);
 	
 	INSERT INTO ENDERECO (estado_endereco, cidade_endereco, bairro_endereco, rua_endereco, logradouro_endereco, fk_id_pessoa) VALUES
@@ -383,8 +381,7 @@ on delete cascade on update cascade
 	  crm_medico VARCHAR(255) UNIQUE NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
 	  especialidade_medico VARCHAR(255) NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade
 	);
 	
 	INSERT INTO MEDICO (crm_medico, fk_id_pessoa, especialidade_medico) VALUES
@@ -417,8 +414,7 @@ on delete cascade on update cascade
    	  altura_paciente VARCHAR(255) NOT NULL,
       	  peso_paciente VARCHAR(255) NOT NULL,
 	  fk_id_pessoa INTEGER NOT NULL,
-	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL on delete cascade on update cascade
 	);
 	
  	INSERT INTO PACIENTE (diagnostico_paciente, altura_paciente, peso_paciente, fk_id_pessoa) VALUES
@@ -461,8 +457,7 @@ on delete cascade on update cascade
 	  datahoraagendamento_agendamento TIMESTAMP NOT NULL,
 	  CONSTRAINT fk_id_pessoa FOREIGN KEY (fk_id_pessoa) REFERENCES PESSOA(id) MATCH FULL
 on delete cascade on update cascade,
-	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_medico FOREIGN KEY (fk_id_medico) REFERENCES MEDICO(id) MATCH FULL on delete cascade on update cascade
 	);
 	
 
@@ -506,7 +501,12 @@ on delete cascade on update cascade
 	(2, 19, '2023-11-27 10:30:00'),
 	(3, 18, '2023-11-27 12:00:00'),
 	(4, 17, '2023-11-27 14:30:00'),
-	(5, 16, '2023-11-27 16:00:00');
+	(5, 16, '2023-11-27 16:00:00'),
+ 	(2, 20, '2023-11-23 09:00:00'),
+	(1, 19, '2023-11-24 10:30:00'),
+	(2, 18, '2023-11-25 12:00:00'),
+	(1, 17, '2023-11-26 14:30:00'),
+	(2, 16, '2023-11-28 16:00:00');
 	
 	
 	CREATE TABLE IF NOT EXISTS CONSULTA (
@@ -515,8 +515,7 @@ on delete cascade on update cascade
 	  datahorainicio_consulta TIMESTAMP,
 	  datahorafim_consulta TIMESTAMP,
 	  status_consulta VARCHAR(255),
-	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id) MATCH FULL
-on delete cascade on update cascade
+	  CONSTRAINT fk_id_agendamento FOREIGN KEY (fk_id_agendamento) REFERENCES AGENDAMENTO(id) MATCH FULL on delete cascade on update cascade
 	);
 	
 	INSERT INTO CONSULTA (fk_id_agendamento, datahorainicio_consulta, datahorafim_consulta, status_consulta) VALUES
