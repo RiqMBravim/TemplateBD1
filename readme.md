@@ -28,7 +28,7 @@ A empresa Coda Fofo está criando um sistema para agendamento de consultas em Un
  	Relatório com a hora de trabalho média de cada especialidade
   	Relatório da idade média de cada diagnostico
    	Relatório de taxa de cancelamento de consulta
-    	Relatório de atraso de inicio e fim de consulta de cada médico
+    Relatório de tempo médio de consulta por cada departamento
     
 ### 5.MODELO CONCEITUAL<br>
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
