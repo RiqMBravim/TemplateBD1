@@ -20,7 +20,7 @@ A empresa CodeIn está criando um sistema para agendamento de consultas em Unida
     
 	Informação de registro dos Médicos, como: Nome, CRM, Especialidade, Email, Telefone.
  	Informações de registro dos Pacientes, como: Nome, Telefone, Email, Idade, Endereço, Diagnostico.
-  	Informações sobre a Consulta, como: dados do médico e do paciente envolvidos, data da consulta, hora de inicio e do fim e observações
+  	Informações sobre a Consulta, como: dados do médico e do paciente envolvidos, data da consulta, hora de inicio e do fim
 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
 
