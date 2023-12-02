@@ -1,4 +1,4 @@
-	drop table if exists CONSULTA;
+drop table if exists CONSULTA;
 drop table if exists AGENDAMENTO;
 drop table if exists CONTATO;
 drop table if exists ENDERECO;
