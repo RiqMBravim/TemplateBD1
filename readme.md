@@ -96,7 +96,8 @@ A empresa CodeIn está criando um sistema para agendamento de consultas em Unida
         b) verificação de correspondencia com o modelo conceitual
         (não serão aceitos modelos que não estejam em conformidade)
 
-![image](https://github.com/RiqMBravim/TemplateBD1/assets/116319569/02a69dc3-5a45-4577-9259-6356aabb5315)
+![image](https://github.com/RiqMBravim/TemplateBD1/assets/111908300/72123cfd-f37d-4963-9f9a-c8c47b898573)
+
 
 
 ### 7	MODELO FÍSICO<br>
