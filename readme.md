@@ -8,7 +8,6 @@ Trabalho desenvolvido durante a disciplina de BD1
 Integrantes do grupo<br>
 HenriqueMBravim@gmail.com
 Cassiano.caporalis@gmail.com
-gustavobilabbong@gmail.com
 
 ### 2.MINI-MUNDO<br>
 
