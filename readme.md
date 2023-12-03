@@ -676,7 +676,7 @@ A empresa CodeIn está criando um sistema para agendamento de consultas em Unida
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Usa template da disciplina disponibilizado no Colab.<br>
+ 	Link Colab dos Itens sessão 9: https://colab.research.google.com/drive/1A0A2GmLAa_LsHunVy7ZQOWp7yuZCk3dZ
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
@@ -717,6 +717,7 @@ A empresa CodeIn está criando um sistema para agendamento de consultas em Unida
 ># Marco de Entrega 03: Do item 9.2 até o ítem 9.10 (10 PTS)<br>
 
 ### 10 RELATÓRIOS E GRÁFICOS
+	Link para Collab com os itens da sessão 10: https://colab.research.google.com/drive/1NZwBKtZxadG3UZCXNSD6KV8OLbAZfWwf#scrollTo=hrqKvaKgHkhV
 
 #### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
