@@ -25,7 +25,7 @@ A empresa CodeIn está criando um sistema para agendamento de consultas em Unida
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
 
 	Relatório com a hora trabalhada de cada médico
- 	Relatório com a hora de trabalho média de cada especialidade
+ 	Relatório com o atraso de consulta de cada médico
   	Relatório da idade média de cada diagnostico
    	Relatório de taxa de cancelamento de consulta
     Relatório de tempo médio de consulta por cada departamento
